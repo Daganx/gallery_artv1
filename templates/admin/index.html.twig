@@ -8,7 +8,6 @@
     <div id="banner-about">
         <p>ADMIN PANEL /</p>
     </div>
-
     <section id="admin-panel">
         <div class="panel-title">
         {% for article in articles %}
@@ -24,10 +23,8 @@
         {% endfor %}
         </div>
     </section>
-
     <div class="panel-create">
         <a style="color:#FBDF17" href="{{ path('app_admin_new') }}">CREATE NEW DESIGN</a>
     </div>
-
     {{ include('commons/_footer.html.twig') }}
 {% endblock %}

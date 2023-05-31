@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\File;
 
 class ArticlesAdminType extends AbstractType
 {
@@ -19,10 +20,23 @@ class ArticlesAdminType extends AbstractType
             ->add('illustration' , FileType::class , [
                 'label' => 'Choose a pic.',
                 'required' => false,
-                'mapped' => false
-            ])
+                'mapped' => false,
+                'constraints' => [
+                    new File([
+                        'maxSize' => '4096k',
+                        'mimeTypes' => [
+                            'image/jpeg',
+                            'image/png',
+                            'image/svg',
+                            'image/jpg'
+                        ],
+                        'mimeTypesMessage' => 'Only JPG & PNG & SVG are allowed'
+                    ])
+                    
+                ]
+            ])            
         ;
-    }
+    }    
 
     public function configureOptions(OptionsResolver $resolver): void
     {

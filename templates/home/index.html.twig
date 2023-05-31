@@ -5,10 +5,7 @@
 {% block body %}
 {{ include('commons/_navigation.html.twig') }}
 
-<header>
-    <section id="banner">
-    </section>
-</header>
+{{ include('commons/_header.html.twig') }}
 
 <section id="banner-about">
     <p>ABOUT ART GALLERY /</p>
@@ -16,25 +13,20 @@
 
 <main>
     <section id="gallery">
-        <div id="gallery-left">
-        </div>
-
+        <div id="gallery-left"></div>
         <div id="gallery-right">
             <div id="gallery-text-container">
                 <p>" Visions Unveiled: The Minimal Gallery of Abstract Delights"</p>
                 <p>Join us for artistic journey today and experience the magic that unfolds when creativity meets canvas.</p>
                 <a href="/art_gallery/public/about"><p class="text-used link-gallery">ABOUT</p></a>
             </div>
-
     </section>
 
 <section id="banner-about">
     <p>ART GALLERY /</p>
 </section>
-    <section id="gallery">
-        <div id="gallery-left-bottom">
-        </div>
-
+<section id="gallery">
+    <div id="gallery-left-bottom"></div>
         <div id="gallery-right">
             <div id="gallery-text-container">
                 <p>Explore our collection of Art Prints & Limited Prints, Paintings.</p>
@@ -46,5 +38,6 @@
 
 {{ include('commons/_footer.html.twig') }}
 
+<script src="{{ asset('assets/js/script.js') }}"></script>
 
 {% endblock %}

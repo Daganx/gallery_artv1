@@ -5,11 +5,9 @@
 {% block body %}
 
 {{ include('commons/_navigation.html.twig') }}
-
     <section id="banner-about">
         <p>GALLERY ROOM /</p>
     </section>
-
 
     <section id="articles-container">
         {% for article in articles %}
@@ -26,28 +24,4 @@
     </section>
 
 {{ include('commons/_footer.html.twig') }}
-
-
-
-    {# <table class="table-container">
-        <tbody>
-        {% for article in articles %}
-            <tr>
-                <td>{{ article.id }}</td>
-                <td>{{ article.title }}</td>
-                <td>{{ article.year }}</td>
-                <td>{{ article.description }}</td>
-                {% if article.illustration %}
-                    <img src="{{ asset('upload_directory/' ~ article.illustration)}}" alt={{article.illustration}}>
-                {% endif %}
-                <td>{{ article.illustration }}</td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="6">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table> #}
-
 {% endblock %}

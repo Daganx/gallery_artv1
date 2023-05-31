@@ -16,11 +16,6 @@ nav{
     background-color: white;
 }
 
-.test{
-    clip-path: polygon(50% 11%, 64% 13%, 74% 15%, 78% 27%, 70% 33%, 51% 30%, 33% 32%, 25% 30%, 24% 19%, 32% 13%);
-
-}
-
 #nav-link-1 > a:hover{
     color: #FBDF17;
 }
@@ -115,14 +110,17 @@ nav{
 
 #banner{
     border: 5px solid black;
-    height: 90vh;
-    background-color: #FBDF17;
+    
+    background-color: #20c96f;
     margin: 5px;
 
-    background-image: url(../img/logo.png);
-    background-position: center;
-    background-size: 30%;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg{
+    height: 500px;
 }
 
 /* BANNER ABOUT */
