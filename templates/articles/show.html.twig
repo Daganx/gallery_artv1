@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DESIGN{% endblock %}
+
+{% block body %}
+
+{{ include('commons/_navigation.html.twig') }}
+
+<section id="banner-about">
+    <p>DESIGN /</p>
+</section> 
+    
+<section id="design-container">
+
+    <div class="design-image">
+        <img class="article-image" src="{{ asset('upload_directory/' ~ articles.illustration)}}" alt={{articles.illustration}}></img>
+    </div>
+
+<section class="design-text-container">
+
+        <div class="design-title">
+            <p>DESIGN # {{articles.id}}</p>
+        </div>
+
+        <div class="design-name">
+            <p>NAME : {{articles.title}}</p>
+        </div>
+
+        <div class="design-year">
+            <p>YEAR OF CREATION : {{articles.year}}</p>
+        </div>
+
+        <div class="design-bar">
+        </div>
+
+        <div class="design-text">
+            <p>INSIDE THE MIND :</p>
+        </div>
+
+        <div class="design-bio">
+            <p>Desc : {{articles.description}}</p>
+        </div>
+
+        <div class="design-contact">
+            <a href="#">ESTIMATE</a>
+        </div>
+</section>
+
+</section>
+
+
+
+    {# <h1>Articles</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ articles.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ articles.title }}</td>
+            </tr>
+            <tr>
+                <th>Year</th>
+                <td>{{ articles.year }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ articles.description }}</td>
+            </tr>
+            <tr>
+                <th>Illustration</th>
+                <td>{{ articles.illustration }}</td>
+            </tr>
+        </tbody>
+    </table> #}
+    {{ include('commons/_footer.html.twig') }}
+    {% endblock %}

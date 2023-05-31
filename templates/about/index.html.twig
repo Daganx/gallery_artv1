@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block body %}
+{{ include('commons/_navigation.html.twig') }}
+
+<section id="banner-about">
+        <p>ABOUT US /</p>
+</section>
+
+<section id="about-container">
+
+    <div class="about-left">
+    </div>
+
+    <div class="about-right">
+        <div class="about-right-title">
+            <p>ID - GALLERY.ART</p>
+        </div>
+        <div class="about-right-bar">
+        </div>
+        <div class="about-right-intro">
+            <p>WHO WE ARE ?</p>
+        </div>
+        <div class="about-right-text">
+            <p>Welcome to our gallery, a sanctuary for lovers of abstract and minimalist art. At our exhibition, we celebrate the beauty of simplicity and the power of the undefined. We believe that art has the ability to transcend boundaries, inviting viewers to explore the depths of their imagination and emotions.<br>
+        </div>
+        <div class="about-right-text-second">
+            <p>We invite you to immerse yourself in the captivating world of abstract and minimalist art, where vibrant colors dance with delicate lines and shapes. Whether you're an art connoisseur seeking new inspiration or a curious soul looking to embark on a visual journey, our gallery provides a space for discovery and appreciation.</p>
+        </div>
+    </div>
+
+
+</section>
+
+{{ include('commons/_footer.html.twig') }}
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gallery Room{% endblock %}
+
+{% block body %}
+
+{{ include('commons/_navigation.html.twig') }}
+
+    <section id="banner-about">
+        <p>GALLERY ROOM /</p>
+    </section>
+
+
+    <section id="articles-container">
+        {% for article in articles %}
+            <div class="article-item">
+                <div>
+                {% if article.illustration %}
+                <a href="{{ path('app_articles_show', {'id': article.id}) }}">
+                    <img class="article-image" src="{{ asset('upload_directory/' ~ article.illustration)}}" alt={{article.illustration}}></a>
+                {% endif %}
+                <p>{{ article.title }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+{{ include('commons/_footer.html.twig') }}
+
+
+
+    {# <table class="table-container">
+        <tbody>
+        {% for article in articles %}
+            <tr>
+                <td>{{ article.id }}</td>
+                <td>{{ article.title }}</td>
+                <td>{{ article.year }}</td>
+                <td>{{ article.description }}</td>
+                {% if article.illustration %}
+                    <img src="{{ asset('upload_directory/' ~ article.illustration)}}" alt={{article.illustration}}>
+                {% endif %}
+                <td>{{ article.illustration }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table> #}
+
+{% endblock %}

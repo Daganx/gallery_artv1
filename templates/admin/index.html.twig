@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin Panel{% endblock %}
+
+{% block body %}
+
+{{ include('commons/_navigation.html.twig') }}
+    <div id="banner-about">
+        <p>ADMIN PANEL /</p>
+    </div>
+
+    <section id="admin-panel">
+        <div class="panel-title">
+        {% for article in articles %}
+            <div class="panel-display">
+                <p>{{article.title}}</p>
+                <p>{{article.description}}</p>
+                <p>{{article.year}}</p>
+                <p>{{article.illustration}}</p>
+                <div>
+                    <a style="color:#FBDF17;" href="{{ path('app_admin_edit', {'id': article.id}) }}">EDIT</a>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </section>
+
+    <div class="panel-create">
+        <a style="color:#FBDF17" href="{{ path('app_admin_new') }}">CREATE NEW DESIGN</a>
+    </div>
+
+    {{ include('commons/_footer.html.twig') }}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Article{% endblock %}
+
+{% block body %}
+{{ include('commons/_navigation.html.twig') }}
+
+    <div id="banner-about">
+        <p>ADMIN PANEL /</p>
+    </div>
+
+    {{ include('admin/_form.html.twig') }}
+    <div class="panel-create">
+        <a style="color:#FBDF17" href="{{ path('app_admin_index') }}">Back to Admin Panel</a>
+    </div>
+
+    {{ include('commons/_footer.html.twig')}}
+{% endblock %}

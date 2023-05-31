@@ -1,0 +1,116 @@
+.panel-title{
+    border: 5px solid black;
+
+    margin: 5px;
+}
+
+.panel-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 5px solid black;
+
+    padding: 10px;
+}
+
+
+.admin-create{
+    border: 5px solid black;
+    margin: 5px;
+}
+
+.panel-create{
+    border: 5px solid black;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+form{
+    border: 5px solid black;
+    margin: 5px;
+}
+
+#articles_admin{
+    border-bottom: 5px solid black;
+
+    margin: 5px;
+}
+
+#articles_admin > div:nth-child(1){
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
+
+#articles_admin > div:nth-child(2){
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
+
+#articles_admin > div:nth-child(3){
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
+#articles_admin > div:nth-child(4){
+    padding: 10px;
+}
+
+#articles_admin_title{
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+}
+
+#articles_admin_year{
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+}
+
+#articles_admin_description{
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+}
+
+#articles_admin_illustration{
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+}
+
+#file-upload-button{
+    border: 2px solid black;
+}
+
+
+.btn-save{
+    margin-left: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+body > form:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+body > form:nth-child(4) > button{
+    border: none;
+    color: #FBDF17;
+    background-color: white;
+    cursor: pointer;
+}
+
+body > form:nth-child(4) > button:hover{
+    color: red;
+}

@@ -1,0 +1,289 @@
+nav{
+    border: 5px solid black;
+
+    margin: 5px;
+
+    height: 5vh;
+
+    display: flex;
+    align-items: center;
+
+    font-family: 'OpenSans-Bold';
+
+    position: sticky;
+    top: 0px;
+
+    background-color: white;
+}
+
+.test{
+    clip-path: polygon(50% 11%, 64% 13%, 74% 15%, 78% 27%, 70% 33%, 51% 30%, 33% 32%, 25% 30%, 24% 19%, 32% 13%);
+
+}
+
+#nav-link-1 > a:hover{
+    color: #FBDF17;
+}
+#nav-link-2 > a:hover{
+    color: #FBDF17;
+}
+#nav-link-3 > a:hover{
+    color: #FBDF17;
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+#nav-logo{
+    height: 100%;
+    width: 50px;
+    background-color: black;
+
+    border-right: 5px solid black;
+
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+
+#nav-brand{
+    border-right: 5px solid black;
+
+    height: 100%;
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#nav-brand p{
+    margin-left: 5px;
+    font-family: 'OpenSans-Bold'; 
+}
+
+#nav-links{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-links a{
+    color: black;
+}
+
+#nav-link-1{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nav-link-2{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nav-link-3{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* START HEADER */
+
+#banner{
+    border: 5px solid black;
+    height: 90vh;
+    background-color: #FBDF17;
+    margin: 5px;
+
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+/* BANNER ABOUT */
+
+#banner-about{
+    border: 5px solid black;
+    height: 5vh;
+
+    margin: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#banner-about p{
+    margin-left: 5px;
+    font-family: 'OpenSans-Bold';
+}
+
+/* START GALLERY */
+
+#gallery{
+    border: 5px solid black;
+    height: 55vh;
+    margin: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: 'OpenSans-Regular';
+}
+
+#gallery-left{
+    border-right: 2.5px solid black;
+
+    width: 50%;
+
+    background-image: url(../img/avenir_loop.gif);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#gallery-right{
+    border-left: 2.5px solid black;
+    
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-text-container{
+    width: 60%;
+}
+
+#gallery-text-container > a > p{
+    color:black;
+}
+
+#gallery-right p{
+
+    margin-bottom: 2rem;
+
+    text-align: left;
+    font-size: 1.2em;
+
+    font-family: "OpenSans-Bold";
+}
+
+#gallery-text-container > p:nth-child(2){
+    font-size: 1em;
+}
+
+#gallery-text-container > p:nth-child(3){
+    font-size: 1em;
+}
+
+/* START GALLERY */
+
+#gallery-left-bottom{
+    border-right: 2.5px solid black;
+
+    width: 50%;
+
+    background-image: url(../img/home_check.gif);
+
+    background-size: cover;
+    background-position: top 50px;
+}
+
+/* START FOOTER */
+
+footer{
+    border: 5px solid black;
+    height: 5vh;
+    
+    margin: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    font-family: 'OpenSans-Regular';
+}
+
+.link-gallery{
+    border: 5px solid black;
+    display: inline;
+
+    padding: 10px;
+}
+
+#footer-links{
+    border-left: 5px solid black;
+    height: 100%;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-linked{
+    padding: 10px;
+}
+
+#footer-mail{
+    border-left: 5px solid black;
+    height: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+}
+
+#footer-github{
+    border-left: 5px solid black;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+}
+
+#footer-copyright{
+    border-left: 5px solid black;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+}
+

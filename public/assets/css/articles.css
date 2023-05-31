@@ -1,0 +1,22 @@
+#articles-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 20px;
+
+    text-align: right;
+    border: 5px solid white;
+}
+
+.article-item{
+    border: 5px solid black;
+}
+
+.article-item p {
+    font-family: 'OpenSans-Bold';
+}
+.article-image{
+    height: 100%;
+    width: 100%;
+
+    border-bottom: 5px solid black;
+}

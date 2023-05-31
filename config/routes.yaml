@@ -1,0 +1,9 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+# admin:
+# path: /admin
+# controller: App\Controller\AdminController::index
+# access_control: 
+# - { path: ^/admin$, roles: ROLE_ADMIN }

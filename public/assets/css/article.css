@@ -1,0 +1,104 @@
+#design-container{
+    border: 5px solid black;
+    margin: 5px;
+    
+    height: 75vh;
+
+    display: flex;
+}
+
+.design-image{
+    border: 5px solid black;
+    margin: 5px;
+
+    width: 35%;
+}
+
+.design-text-container{
+    border: 5px solid black;
+    margin: 5px;
+
+    width: 65%;
+
+    font-size: larger;
+}
+
+.design-title{
+    border-bottom: 5px solid black;
+    margin: 5px;
+
+    text-align: start;
+}
+
+.design-title p{
+    margin-left: 10px;
+}
+
+.design-name{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px solid black;
+}
+
+.design-name p{
+    margin-left: 10px;
+}
+
+.design-year{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px solid black;
+}
+
+.design-year p {
+    margin-left: 10px;
+}
+
+.design-bar{
+    border: 5px solid black;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.design-text{
+    border-bottom: 5px solid black;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+
+}
+
+.design-text p{
+    margin-left: 10px;
+}
+
+.design-bio{
+    border: 5px solid black;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.design-bio p{
+    margin-left: 10px;
+    font-size: smaller;
+    font-family: 'OpenSans-Regular';
+}
+
+.design-contact{
+    border: 5px solid black;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.design-contact a{
+    color: black;
+    font-family: 'OpenSans-Regular';
+    font-size: smaller;
+    padding: 5px;
+}

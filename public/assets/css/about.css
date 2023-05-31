@@ -1,0 +1,70 @@
+#about-container{
+    border: 5px solid black;
+
+    margin: 5px;
+
+    height: 75vh;
+
+    display: flex;
+}
+
+.about-left{
+    border-right: 2.5px solid black;
+
+    width: 50%;
+
+    background-image: url(../img/home_expo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-right{
+    border-left: 2.5px solid black;
+
+    width: 50%;
+}
+
+
+.about-right-title {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    text-align: start;
+}
+
+.about-right-bar{
+    border: 2.5px solid black;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.about-right-intro{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.about-right-intro p {
+    border-bottom: 2px solid black;
+
+    display: inline-block;
+}
+
+.about-right-text{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.about-right-text p{
+    font-family: 'OpenSans-Regular';
+}
+
+.about-right-text-second{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.about-right-text-second p{
+    font-family: 'OpenSans-Regular';
+}

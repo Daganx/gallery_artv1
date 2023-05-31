@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Article{% endblock %}
+
+{% block body %}
+{{ include('commons/_navigation.html.twig') }}
+    <h1>Edit Design</h1>
+
+    {{ include('admin/_form.html.twig', {'button_label': 'Update'}) }}
+
+    {{ include('admin/_delete_form.html.twig') }}
+
+    <div class="panel-create">
+        <a style="color:#FBDF17" href="{{ path('app_admin_index') }}">Back to Admin Panel</a>
+    </div>
+    
+{{ include('commons/_footer.html.twig') }}
+{% endblock %}
