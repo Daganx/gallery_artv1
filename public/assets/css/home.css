@@ -8,7 +8,7 @@ nav{
     display: flex;
     align-items: center;
 
-    font-family: 'OpenSans-Bold';
+    font-family: 'NHass';
 
     position: sticky;
     top: 0px;
@@ -17,23 +17,18 @@ nav{
 }
 
 #nav-link-1 > a:hover{
-    color: #FBDF17;
+    font-size: 20px;
 }
 #nav-link-2 > a:hover{
-    color: #FBDF17;
+    font-size: 20px;
 }
 #nav-link-3 > a:hover{
-    color: #FBDF17;
+    font-size: 20px;
 }
 
 @font-face {
-    font-family: "OpenSans-Regular";
-    src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: "OpenSans-Bold";
-    src: url(../fonts/OpenSans-Bold.ttf);
+    font-family: 'NHass';
+    src: url(../fonts/NHaas.ttf);
 }
 
 #nav-logo{
@@ -63,8 +58,8 @@ nav{
 }
 
 #nav-brand p{
-    margin-left: 5px;
-    font-family: 'OpenSans-Bold'; 
+    font-size: 30px;
+    margin-left: 1rem;
 }
 
 #nav-links{
@@ -74,6 +69,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
 }
 
 #nav-links a{
@@ -111,15 +107,16 @@ nav{
 #banner{
     border: 5px solid black;
     
-    background-color: #20c96f;
+    background-color: #fbdf17;
     margin: 5px;
 
-    display: flex;
+    display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.svg{
+svg{
     height: 500px;
 }
 
@@ -138,7 +135,7 @@ nav{
 
 #banner-about p{
     margin-left: 5px;
-    font-family: 'OpenSans-Bold';
+    letter-spacing: 5px;
 }
 
 /* START GALLERY */
@@ -150,8 +147,6 @@ nav{
 
     display: flex;
     justify-content: space-between;
-    
-    font-family: 'OpenSans-Regular';
 }
 
 #gallery-left{
@@ -184,14 +179,16 @@ nav{
     color:black;
 }
 
+#gallery-text-container > a > p:hover{
+    padding: 12px;
+}
+
 #gallery-right p{
 
     margin-bottom: 2rem;
 
     text-align: left;
     font-size: 1.2em;
-
-    font-family: "OpenSans-Bold";
 }
 
 #gallery-text-container > p:nth-child(2){
@@ -209,10 +206,10 @@ nav{
 
     width: 50%;
 
-    background-image: url(../img/home_check.gif);
+    background-image: url(../img/paint.gif);
 
     background-size: cover;
-    background-position: top 50px;
+    background-position: center;
 }
 
 /* START FOOTER */
@@ -226,8 +223,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
-    font-family: 'OpenSans-Regular';
 }
 
 .link-gallery{

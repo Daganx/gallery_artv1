@@ -3,8 +3,6 @@
 
     margin: 5px;
 
-    height: 75vh;
-
     display: flex;
 }
 
@@ -56,15 +54,11 @@
     margin-top: 20px;
 }
 
-.about-right-text p{
-    font-family: 'OpenSans-Regular';
-}
-
 .about-right-text-second{
     margin-top: 20px;
     margin-left: 15px;
 }
 
 .about-right-text-second p{
-    font-family: 'OpenSans-Regular';
+    margin-bottom: 2rem;
 }

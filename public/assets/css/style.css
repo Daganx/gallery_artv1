@@ -11,14 +11,10 @@
         margin: 0;
         padding: 0;
 
-        font-family: 'OpenSans-Bold';
+        font-family: 'NHass';
 }
 
 @font-face {
-        font-family: 'OpenSans-Regular';
-        src: url(../fonts/OpenSans-Regular.ttf);
-}
-@font-face {
-        font-family: 'OpenSans-Bold';
-        src: url(../fonts/OpenSans-Bold.ttf);
+        font-family: 'NHass';
+        src: url(../fonts/NHaas.ttf);
 }

@@ -43,6 +43,7 @@
 
 .design-name p{
     margin-left: 10px;
+    letter-spacing: 8px;
 }
 
 .design-year{
@@ -86,7 +87,6 @@
 .design-bio p{
     margin-left: 10px;
     font-size: smaller;
-    font-family: 'OpenSans-Regular';
 }
 
 .design-contact{
@@ -98,7 +98,6 @@
 
 .design-contact a{
     color: black;
-    font-family: 'OpenSans-Regular';
     font-size: smaller;
     padding: 5px;
 }
