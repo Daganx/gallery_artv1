@@ -1,0 +1,32 @@
+.login-form{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title{
+    text-align: center;
+}
+
+.btn-login{
+    margin-top: 1rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    border: 3px solid black;
+}
+
+.input-mail{
+    border: 3px solid black;
+    padding: 0.5rem;
+}
+
+.input-password{
+    border: 3px solid black;
+    padding: 0.5rem;
+}

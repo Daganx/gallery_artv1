@@ -73,7 +73,23 @@ class AdminController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $file = $form->get('illustration')->getData();
+            if ($file){
+                if ($article->getIllustration()){
+                    $oldPathFile = $this->getParameter('upload_directory') . '/' . $article->getIllustration();
+                    if(file_exists($oldPathFile)){
+                        unlink($oldPathFile);
+                    }
+                }
+                $originalNameFile = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+                $newFileName = $originalNameFile.uniqid(). '.' . $file->guessExtension();
+                $file->move($this->getParameter('upload_directory') , $newFileName);
+
+                $article->setIllustration($newFileName);
+            }
             $articlesRepository->save($article, true);
+
 
             return $this->redirectToRoute('app_admin_index', [], Response::HTTP_SEE_OTHER);
         }

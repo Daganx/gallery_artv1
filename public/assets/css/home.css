@@ -16,6 +16,7 @@ nav{
     background-color: white;
 }
 
+
 #nav-link-1 > a:hover{
     font-size: 20px;
 }
@@ -110,6 +111,8 @@ nav{
     background-color: #fbdf17;
     margin: 5px;
 
+    height: 80vh;
+
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +120,7 @@ nav{
 }
 
 svg{
-    height: 500px;
+    height: 100%;
 }
 
 /* BANNER ABOUT */
@@ -177,11 +180,27 @@ svg{
 
 #gallery-text-container > a > p{
     color:black;
+    border: 3px solid green;
+    color: green;
 }
 
 #gallery-text-container > a > p:hover{
     padding: 12px;
 }
+
+#gallery-text-container > p:nth-child(1) > span{
+color: #fbdf17;
+}
+
+.gallery-text-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-text-container.show {
+    opacity: 1;
+}
+
 
 #gallery-right p{
 
@@ -206,11 +225,12 @@ svg{
 
     width: 50%;
 
-    background-image: url(../img/paint.gif);
+    background-image: url(../img/gifdesign.gif);
 
     background-size: cover;
     background-position: center;
 }
+
 
 /* START FOOTER */
 

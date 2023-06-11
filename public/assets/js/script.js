@@ -25,3 +25,22 @@ colorOptions.forEach(function(option) {
     });
   });
 });
+
+// Sélectionnez l'élément gallery-text-container
+const galleryTextContainer = document.querySelector('.gallery-text-container');
+
+// Créez un nouvel observer en utilisant l'API Intersection Observer
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            galleryTextContainer.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+// Ajoutez l'observer à la section que vous souhaitez surveiller
+const gallerySection = document.getElementById('gallery');
+observer.observe(gallerySection);
+
+
